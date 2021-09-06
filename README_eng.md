@@ -54,6 +54,12 @@ Potential users:
 2.	Vendors who are partnering with VMware to deliver AI Appliance solution.
 3.	Other Kubernetes solutions that support AI/ML workload and want to leverage Bitfusion GPU
 
+## How to build the AI application with the Bitfusion on Kubernetes
+
+Computer vision is an interdisciplinary field that deals with how computers can be made to gain high-level understanding from digital images or videos. Computer vision technology is one of the most promising areas of research within artificial intelligence and computer science and offers tremendous advantages for businesses in the modern era.
+At its heart, the field of computer vision focuses on designing computer systems that possess the ability to capture, understand, and interpret important visual information contained with image and video data. Computer vision systems then translate this data, using contextual knowledge provided by human beings, into insights used to drive decision making. Turning raw image data into higher-level concepts so that humans or computers can interpret and act upon them is the principal goal of computer vision technology.
+In this section, it will explain how to perform classification using Bitfusion on Kubernetes with TensorFlow library in Python.
+
 ###  1. Setup the environment
 **(1)	Bitfusion**
 Before building the model, you need to setup the related environment for the DNN training.  Make sure you have installed the VMware vSphere Bitfusion and NVIDIA driver. Bitfusion runs as a client-server architecture. It runs a GPU service on VMware appliances (VMs with prepackaged software and services). These GPU servers require access to local GPUs (usually through VMware vSphere DirectPath I/O). The Host must run vSphere 7. Bitfusion client software runs on the virtual machines where the applications run. Clients may use vSphere 7 or 6.7.
