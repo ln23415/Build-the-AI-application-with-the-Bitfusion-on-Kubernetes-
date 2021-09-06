@@ -134,30 +134,30 @@ $ make deploy
 
 简而言之，VGG是一个用于图像分类的深度卷积神经网络，VGG19的模型为：
 
->    Conv3x3 (64)
->    Conv3x3 (64)
->    MaxPool
->    Conv3x3 (128)
->    Conv3x3 (128)
->    MaxPool
->    Conv3x3 (256)
->    Conv3x3 (256)
->    Conv3x3 (256)
->    Conv3x3 (256)
->    MaxPool
->    Conv3x3 (512)
->    Conv3x3 (512)
->    Conv3x3 (512)
->    Conv3x3 (512)
->    MaxPool
->    Conv3x3 (512)
->    Conv3x3 (512)
->    Conv3x3 (512)
->    Conv3x3 (512)
->    MaxPool
->    Fully Connected (4096)
->    Fully Connected (4096)
->    Fully Connected (1000)
+>    Conv3x3 (64)	<br>
+>    Conv3x3 (64)	<br>
+>    MaxPool	<br>
+>    Conv3x3 (128)	<br>
+>    Conv3x3 (128)	<br>
+>    MaxPool	<br>
+>    Conv3x3 (256)	<br>
+>    Conv3x3 (256)	<br>
+>    Conv3x3 (256)	<br>
+>    Conv3x3 (256)	<br>
+>    MaxPool	<br>
+>    Conv3x3 (512)	<br>
+>    Conv3x3 (512)	<br>
+>    Conv3x3 (512)	<br>
+>    Conv3x3 (512)	<br>
+>    MaxPool	<br>
+>    Conv3x3 (512)	<br>
+>    Conv3x3 (512)	<br>
+>    Conv3x3 (512)	<br>
+>    Conv3x3 (512)	<br>
+>    MaxPool	<br>
+>    Fully Connected (4096)	<br>
+>    Fully Connected (4096)	<br>
+>    Fully Connected (1000)	<br>
 >    SoftMax
 
 
@@ -422,10 +422,10 @@ spec:
 Bitfusiondeviceplugin/tensorflow:20.01-tf2-py3 是一个基于NGC 的docker容器镜像(nvcr.io/nvidia/tensorflow:20.01-tf2-py3)。此容器中环境的详细信息为：
 
 Here is the information of the container:
->Ubuntu 18.04.3 LTS
->Python version 3.6.9
->Tensorflow version GPU 2.0.0  
->Cuda version 10.2.89
+>Ubuntu 18.04.3 LTS <br>
+>Python version 3.6.9 <br>
+>Tensorflow version GPU 2.0.0  <br>
+>Cuda version 10.2.89 <br>
 >opencv version 4.5.1
 
 其中openCV模块被安装在了镜像中。openCV模块是在训练前用于预处理图像的模块。对于其他镜像，可以登录容器并使用如下命令安装openCV模块，训练工作负载会使用处理后的图像进行训练。
