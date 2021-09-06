@@ -63,11 +63,11 @@ In this section, it will explain how to perform classification using Bitfusion o
 ###  1. Setup the environment
 **(1)	Bitfusion**
 Before building the model, you need to setup the related environment for the DNN training.  Make sure you have installed the VMware vSphere Bitfusion and NVIDIA driver. Bitfusion runs as a client-server architecture. It runs a GPU service on VMware appliances (VMs with prepackaged software and services). These GPU servers require access to local GPUs (usually through VMware vSphere DirectPath I/O). The Host must run vSphere 7. Bitfusion client software runs on the virtual machines where the applications run. Clients may use vSphere 7 or 6.7.
-The Bitfusion servers will register a Bitfusion plug-in on VMware vCenter. The plug-in provides monitoring and management of the clients and servers. For more details about the installation of vSphere Bitfusion, please refer to: https://docs.vmware.com/en/VMware-vSphere-Bitfusion/2.0/vmware-vsphere-bitfusion-20-installation-guide.pdf
+The Bitfusion servers will register a Bitfusion plug-in on VMware vCenter. The plug-in provides monitoring and management of the clients and servers. For more details about the installation of vSphere Bitfusion, please refer to: <https://docs.vmware.com/en/VMware-vSphere-Bitfusion/2.0/vmware-vsphere-bitfusion-20-installation-guide.pdf>
 
 **(2)	Kubernetes**
 In order to enable Bitfusion on Kubernetes, it is necessary to deploy a Kubernetes cluster or use an existed Kubernetes environment to run the workload. For example, you can provision Tanzu Kubernetes clusters by invoking the Tanzu Kubernetes Grid Service declarative API. 
-Get more details of Tanzu Kubernetes Grid Service, please refer to: https://docs.vmware.com/en/VMware-vSphere/7.0/vmware-vsphere-with-tanzu/GUID-3040E41B-8A54-4D23-8796-A123E7CAE3BA.html
+Get more details of Tanzu Kubernetes Grid Service, please refer to: <https://docs.vmware.com/en/VMware-vSphere/7.0/vmware-vsphere-with-tanzu/GUID-3040E41B-8A54-4D23-8796-A123E7CAE3BA.html>
 
 
 **(3)	Bitfusion device plugin**
@@ -84,7 +84,7 @@ Step 3. Select the Tokens tab and then select the proper token to download
 ![img](diagrams/p3.png)
 
 Step 4. Click DOWNLOAD button, make sure the token is Enabled.
-![img](diagrams/p3.png)
+![img](diagrams/p4.png)
 
 If no tokens are available in the list, click on NEW TOKEN to create a Token.
 For more details, please refer to:
@@ -110,7 +110,7 @@ Then use the following command to create a secret in Kubernetes in the namespace
 $ kubectl create secret generic bitfusion-secret --from-file=tokens -n kube-system
 ```
 
-For more details about kubectl:  https://kubernetes.io/docs/reference/kubectl/overview/
+For more details about kubectl:  <htts://kubernetes.io/docs/reference/kubectl/overview/>
 After that, you can deploy the Bitfusion device plugin with pre-built images. Use the following command to clone the source code:
 
 ```
@@ -457,7 +457,7 @@ Use the kubectl command to submit the training job to Kubernetes cluster.
 $ kubectl create -f /home/workspace/training/workload.yaml
 ```
 
-![img](diagrams/p4.png)
+![img](diagrams/p5.png)
 
 Then you can get the log of training by the command below:
 ```
