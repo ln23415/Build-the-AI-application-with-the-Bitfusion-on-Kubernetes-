@@ -435,10 +435,10 @@ spec:
 bitfusiondeviceplugin/tensorflow:20.01-tf2-py3 is an image based NGC docker container image(nvcr.io/nvidia/tensorflow:20.01-tf2-py3).  
 
 Here is the information of the container:
->Ubuntu 18.04.3 LTS
->Python version 3.6.9
->Tensorflow version GPU 2.0.0  
->Cuda version 10.2.89
+>Ubuntu 18.04.3 LTS <br>
+>Python version 3.6.9 <br>
+>Tensorflow version GPU 2.0.0  <br>
+>Cuda version 10.2.89 <br>
 >opencv version 4.5.1
 
 CV2 module is installed to the image. CV2 module is used to preprocess the images before training. For other images, login into the container and use commands below to install the cv2 module.
