@@ -76,7 +76,7 @@ Bitfusion 服务器将会在VMware vCenter中注册一个Bitfusion plug-in插件
 ![img](diagrams/p3.png)
 
 第四步： 点击DOWNLOAD按钮，确保此token已经被启用
-![img](diagrams/p3.png)
+![img](diagrams/p4.png)
 
 如果token在列表中不可用，点击NEW TOKEN按钮来创建一个token。
 更多请参考：<https://docs.vmware.com/en/VMware-vSphere-Bitfusion/2.5/Install-Guide/GUID-361A9C59-BB22-4BF0-9B05-8E80DE70BE5B.html>
@@ -441,7 +441,7 @@ $ apt-get install -y libgl1-mesa-dev
 ```
 $ kubectl create -f /home/workspace/training/workload.yaml
 ```
-![img](diagrams/p4.png)
+![img](diagrams/p5.png)
 
 使用下面的命令可以查看训练模型的日志信息：
 ```
