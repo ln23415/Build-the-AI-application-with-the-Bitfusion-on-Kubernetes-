@@ -146,8 +146,8 @@ A convolutional neural network (CNN) is built to classify the 4 categories of im
 VGG19 is a variant of VGG model which in short consists of 19 layers (16 convolution layers, 3 Fully connected layer, 5 MaxPool layers and 1 SoftMax layer). There are other variants of VGG like VGG11, VGG16 and others. VGG19 has 19.6 billion FLOPs.
 
 So in simple language VGG is a deep CNN used to classify images. The layers in VGG19 model are as follows:
->    Conv3x3 (64)
->    Conv3x3 (64)
+>    Conv3x3 (64)<br/>
+>    Conv3x3 (64)<br>
 >    MaxPool
 >    Conv3x3 (128)
 >    Conv3x3 (128)
