@@ -21,7 +21,7 @@ jobs:
       run: |
         cd /
         sudo mkdir -p /goroot
-        curl https://storage.googleapis.com/golang/go1.14.linux-amd64.tar.gz | tar xvzf - -C /goroot --strip-components=1
+        sudo curl https://storage.googleapis.com/golang/go1.14.linux-amd64.tar.gz | tar xvzf - -C /goroot --strip-components=1
         export GOROOT=/goroot
         export GOPATH=/gopath
         export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
